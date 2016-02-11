@@ -1,0 +1,14 @@
+Package: Regrans
+Title: Segmented Linear Regression Models
+Version: 0.0-1
+Authors@R: as.person(c(
+    "Rodrigo Sant'Ana <rsantana@univali.br> [aut, cre]",
+    "Fernando de Pol Mayer <fernando.mayer@ufpr.br> [ctb]",
+    "Paulo Ricardo Pezzuto <pezzuto@univali.br> [aut]"))
+Description: This package fits segmented linear regression models.
+Depends:
+    R (>= 3.2.2)
+License: GPL-3
+LazyData: true
+Encoding: UTF-8
+RoxygenNote: 5.0.1
