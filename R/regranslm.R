@@ -10,7 +10,6 @@
 ##' @author Rodrigo Sant'Ana \email{rsantana@@univali.br}, Fernando
 ##'     Mayer \email{fernando.mayer@@ufpr.br}
 ##'
-##' @export
 regranslm <- function(x, y, n.min = 5) {
     if(n.min < 3) {
         stop("n.min must be greater than 2")
@@ -61,5 +60,7 @@ regranslm <- function(x, y, n.min = 5) {
     out <- out[order(out$i),]
     row.names(out) <- paste0("m", out$i, rep(c("l", "r"), l = nrow(out)))
     out$i <- NULL
-    return(out)
+    final <- list(out = out, mod = mod)
+    class(final) <- "regrans"
+    return(final)
 }

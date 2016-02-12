@@ -1,2 +1,7 @@
 ^.*\.Rproj$
 ^\.Rproj\.user$
+^data-raw$
+^\.git$
+.gitignore
+README.md
+
