@@ -2,7 +2,8 @@
 % Please edit documentation in R/regrans.R
 \name{regrans}
 \alias{regrans}
-\title{Fits Segmented Linear Regression Models}
+\title{Interactive Routine for Fit Segmented Linear Regression
+    Models}
 \usage{
 regrans(x, y, n.min = 5)
 }

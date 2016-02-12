@@ -1,4 +1,5 @@
-##' @title Fits Segmented Linear Regression Models
+##' @title Interactive Routine for Fit Segmented Linear Regression
+##'     Models
 ##' @name regrans
 ##'
 ##' @description Fit segmented linear models

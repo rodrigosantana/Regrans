@@ -21,6 +21,7 @@ regranslm <- function(x, y, n.min = 5) {
         stop("x and y must be numeric")
     }
     da <- data.frame(X = x, Y = y)
+    da <- da[order(da$X, da$Y),]
     nmod <- nrow(da) - (n.min*2)
     mod <- list()
     length(mod) <- nmod
