@@ -4,4 +4,6 @@
 ^\.git$
 .gitignore
 README.md
-
+README.Rmd
+buildPkg.R
+downloads/
