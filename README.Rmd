@@ -1,0 +1,89 @@
+```{r, echo=FALSE, include=FALSE}
+## Get VERSION and create file names
+ver <- sub(x = grep(x = readLines("DESCRIPTION"),
+           pattern = "^Version: ",
+           value = TRUE),
+           pattern = "^Version: ", replacement = "")
+pkg.name <- "Regrans_"
+pkg.source <- paste0(pkg.name, ver, ".tar.gz")
+pkg.win <- paste0(pkg.name, ver, ".zip")
+```
+
+# Regrans `r ver`
+
+Segmented Linear Regression Models
+
+## Introduction
+
+Regrans was designed to fit segmented regression models.
+
+## Download and install
+
+### Linux/Mac
+
+Use the `devtools` package (available from
+[CRAN](http://cran-r.c3sl.ufpr.br/web/packages/devtools/index.html)) to
+install automatically from the official Git repository:
+
+```{r, eval=FALSE}
+library(devtools)
+install_github("rodrigosantana/Regrans")
+```
+
+Alternatively, download the package tarball: [`r pkg.source`][]
+and run from a UNIX terminal (make sure you are on the container file
+directory):
+
+```{r, echo=FALSE, comment=NA}
+cmd <- paste("R CMD INSTALL -l /path/to/your/R/library", pkg.source)
+cat(cmd, sep = "\n")
+```
+
+Or, inside an `R` session:
+
+
+```{r, echo=FALSE, comment=NA}
+inst <- paste0("install.packages(", "\"", pkg.source, "\"", ", repos = NULL,\n",
+               "                 lib.loc = \"/path/to/your/R/library\",\n",
+               "                 dependencies = TRUE)")
+cat(inst, sep = "\n")
+```
+
+Note that `-l /path/to/your/R/library` in the former and `lib.loc =
+"/path/to/your/R/library"` in the latter are optional. Only use it if you
+want to install in a personal library, other than the standard R
+library.
+
+### Windows
+
+Download Windows binary version: [`r pkg.win`][] (**do not unzip
+it under Windows**), put the file in your working directory, and from
+inside `R`:
+
+```{r, echo=FALSE, comment=NA}
+instw <- paste0("install.packages(", "\"", pkg.win, "\"", ", repos = NULL,\n",
+                "                 dependencies = TRUE)")
+cat(instw, sep = "\n")
+```
+
+## Documentation
+
+The reference manual in PDF can be found here: [Regrans-manual.pdf][]
+
+## License
+
+This package is released under the
+[GNU General Public License (GPL) v. 3.0](http://www.gnu.org/licenses/gpl-3.0.html)
+
+```{r, echo=FALSE, include=FALSE}
+pkg.source.link <- paste0(
+    "https://github.com/rodrigosantana/Regrans/blob/master/downloads/",
+    pkg.source, "?raw=true")
+pkg.win.link <- paste0(
+    "https://github.com/rodrigosantana/Regrans/blob/master/downloads/",
+    pkg.win, "?raw=true")
+```
+
+[`r pkg.source`]: `r pkg.source.link`
+[`r pkg.win`]: `r pkg.win.link`
+[Regrans-manual.pdf]: https://github.com/rodrigosantana/Regrans/raw/master/downloads/Regrans-manual.pdf
