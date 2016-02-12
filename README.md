@@ -19,7 +19,7 @@ install automatically from the official Git repository:
 
 ```r
 library(devtools)
-install_github("fernandomayer/Regrans")
+install_github("rodrigosantana/Regrans")
 ```
 
 Alternatively, download the package tarball: [Regrans_0.0.1.tar.gz][]
@@ -71,4 +71,4 @@ This package is released under the
 
 [Regrans_0.0.1.tar.gz]: https://github.com/rodrigosantana/Regrans/blob/master/downloads/Regrans_0.0.1.tar.gz?raw=true
 [Regrans_0.0.1.zip]: https://github.com/rodrigosantana/Regrans/blob/master/downloads/Regrans_0.0.1.zip?raw=true
-[Regrans-manual.pdf]: https://github.com/rodrigosantana/Regrans/raw/master/downloads/FishMaps-manual.pdf
+[Regrans-manual.pdf]: https://github.com/rodrigosantana/Regrans/raw/master/downloads/Regrans-manual.pdf

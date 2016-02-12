@@ -27,7 +27,7 @@ install automatically from the official Git repository:
 
 ```{r, eval=FALSE}
 library(devtools)
-install_github("fernandomayer/Regrans")
+install_github("rodrigosantana/Regrans")
 ```
 
 Alternatively, download the package tarball: [`r pkg.source`][]
@@ -86,4 +86,4 @@ pkg.win.link <- paste0(
 
 [`r pkg.source`]: `r pkg.source.link`
 [`r pkg.win`]: `r pkg.win.link`
-[Regrans-manual.pdf]: https://github.com/rodrigosantana/Regrans/raw/master/downloads/FishMaps-manual.pdf
+[Regrans-manual.pdf]: https://github.com/rodrigosantana/Regrans/raw/master/downloads/Regrans-manual.pdf
