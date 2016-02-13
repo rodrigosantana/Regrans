@@ -11,6 +11,8 @@ pkg.win <- paste0(pkg.name, ver, ".zip")
 
 # Regrans `r ver`
 
+[![Build Status](https://travis-ci.org/rodrigosantana/Regrans.svg)](https://travis-ci.org/rodrigosantana/Regrans)
+
 Segmented Linear Regression Models
 
 ## Introduction

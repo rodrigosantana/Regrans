@@ -7,3 +7,4 @@ README.md
 README.Rmd
 buildPkg.R
 downloads/
+^\.travis\.yml$

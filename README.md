@@ -2,6 +2,8 @@
 
 # Regrans 0.0.1
 
+[![Build Status](https://travis-ci.org/rodrigosantana/Regrans.svg)](https://travis-ci.org/rodrigosantana/Regrans)
+
 Segmented Linear Regression Models
 
 ## Introduction
