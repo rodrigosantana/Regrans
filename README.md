@@ -60,6 +60,11 @@ install.packages("Regrans_0.0.1.zip", repos = NULL,
                  dependencies = TRUE)
 ```
 
+## Authors
+
+- [Rodrigo Sant'Ana](http://rodrigosantana.github.io)
+- [Fernando Mayer](http://www.leg.ufpr.br/~fernandomayer)
+
 ## Documentation
 
 The reference manual in PDF can be found here: [Regrans-manual.pdf][]

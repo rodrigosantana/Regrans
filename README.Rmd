@@ -68,6 +68,11 @@ instw <- paste0("install.packages(", "\"", pkg.win, "\"", ", repos = NULL,\n",
 cat(instw, sep = "\n")
 ```
 
+## Authors
+
+- [Rodrigo Sant'Ana](http://rodrigosantana.github.io)
+- [Fernando Mayer](http://www.leg.ufpr.br/~fernandomayer)
+
 ## Documentation
 
 The reference manual in PDF can be found here: [Regrans-manual.pdf][]
