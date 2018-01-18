@@ -8,7 +8,7 @@ NULL
 
 ##' Simulated data
 ##'
-##' A simple simulated data just for an example.
+##' A simple simulated data just for a good example.
 ##'
 ##' @name simdata
 ##' @docType data
