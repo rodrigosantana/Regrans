@@ -7,4 +7,3 @@
 \description{
 Fits Segmented Linear Regression Models.
 }
-

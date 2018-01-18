@@ -10,7 +10,6 @@
   \item y: response variable.
 }}
 \description{
-Simulated data just for example
+A simple simulated data just for an example.
 }
 \keyword{datasets}
-

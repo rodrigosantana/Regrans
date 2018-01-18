@@ -35,4 +35,3 @@ Segmented linear regression plot for visualization of
 Rodrigo Sant'Ana \email{rsantana@univali.br}, Fernando
     Mayer \email{fernando.mayer@ufpr.br}
 }
-

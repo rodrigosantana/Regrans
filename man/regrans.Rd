@@ -25,4 +25,3 @@ Fit segmented linear models
 Rodrigo Sant'Ana \email{rsantana@univali.br}, Fernando
     Mayer \email{fernando.mayer@ufpr.br}
 }
-
