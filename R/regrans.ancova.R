@@ -11,5 +11,10 @@
 ##' @author Rodrigo Sant'Ana \email{rsantana@@univali.br}, Fernando
 ##'     Mayer \email{fernando.mayer@@ufpr.br}
 regrans.ancova <- function(obj) {
-    print(obj)
+    nleft <- nrow(obj$left$model)
+    nright <- nrow(obj$right$model)
+    da <- data.frame(model = c(rep("left", nleft),
+                               rep("right", nright)),
+                     rbind(obj$left$model, obj$right$model))
+    m1 <- lm(Y ~ X*model, data = da)
 }

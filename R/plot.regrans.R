@@ -29,8 +29,8 @@ plot.regrans <- function(obj, col.lines = c("red", "blue"),
     }
     da <- rbind(obj$left$model, obj$right$model)
     plot(Y ~ X, data = da, ...)
-    lines(x = obj$left$objel$X, y = obj$left$fitted.values,
+    lines(x = obj$left$model$X, y = obj$left$fitted.values,
           col = col.lines[1], lty = lty.lines[1], lwd = lwd.lines[1])
-    lines(x = obj$right$objel$X, y = obj$right$fitted.values,
+    lines(x = obj$right$model$X, y = obj$right$fitted.values,
           col = col.lines[2], lty = lty.lines[2], lwd = lwd.lines[2])
 }
