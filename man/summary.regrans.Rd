@@ -4,8 +4,8 @@
 \alias{summary.regrans}
 \title{Summarizing Segmented Linear Regression Fits}
 \usage{
-\method{summary}{regrans}(object, correlation = FALSE, symbolic.cor = FALSE,
-  ...)
+\method{summary}{regrans}(object, correlation = FALSE,
+  symbolic.cor = FALSE, ...)
 }
 \arguments{
 \item{object}{an object of class \code{regrans}, usually, a result
