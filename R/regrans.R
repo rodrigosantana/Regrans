@@ -12,8 +12,7 @@
 ##'     Mayer \email{fernando.mayer@@ufpr.br}
 ##'
 ##' @export
-regrans <- function(x, y, n.min = 5) UseMethod("regrans")
-regrans.default <- function(x, y, n.min = 5) {
+regrans <- function(x, y, n.min = 5) {
     obj <- regranslm(x = x, y = y, n.min = n.min)
     obj$out$id <- as.numeric(gsub("\\D", "", row.names(obj$out)))
     vet <- tapply(obj$out$sq.res, obj$out$id, sum)
