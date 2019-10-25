@@ -28,6 +28,12 @@ The function ‘summary.regrans’ computes and returns a list
 \description{
 "summary" method for class \code{regrans}.
 }
+\examples{
+data(simdata)
+mod <- regrans(simdata$x, simdata$y)
+summary(mod)
+
+}
 \author{
 Rodrigo Sant'Ana \email{rsantana@univali.br}, Fernando
     Mayer \email{fernando.mayer@ufpr.br}

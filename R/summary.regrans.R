@@ -1,5 +1,6 @@
 ##' @title Summarizing Segmented Linear Regression Fits
-##' @name summary.regrans
+##' @author Rodrigo Sant'Ana \email{rsantana@@univali.br}, Fernando
+##'     Mayer \email{fernando.mayer@@ufpr.br}
 ##'
 ##' @description "summary" method for class \code{regrans}.
 ##'
@@ -16,11 +17,14 @@
 ##'     segmented regression given in ‘object’. For more details see
 ##'     also the help of summary.lm.
 ##'
-##' @author Rodrigo Sant'Ana \email{rsantana@@univali.br}, Fernando
-##'     Mayer \email{fernando.mayer@@ufpr.br}
+##' @examples
+##' data(simdata)
+##' mod <- regrans(simdata$x, simdata$y)
+##' summary(mod)
 ##'
 ##' @method summary regrans
 ##' @export
+
 summary.regrans <- function(object, correlation = FALSE,
                             symbolic.cor = FALSE, ...) {
     summ.out <- list(
@@ -28,6 +32,6 @@ summary.regrans <- function(object, correlation = FALSE,
                        symbolic.cor = symbolic.cor, ...),
         right = summary(object[[2]], correlation = correlation,
                         symbolic.cor = symbolic.cor, ...))
-    class(summ.out) <- "summary.regrans"
+    ## class(summ.out) <- "summary.regrans"
     return(invisible(summ.out))
 }
