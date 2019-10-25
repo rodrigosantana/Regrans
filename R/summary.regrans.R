@@ -25,5 +25,6 @@ summary.regrans <- function(object, correlation = FALSE,
                        symbolic.cor = symbolic.cor, ...),
         right = summary(object[[2]], correlation = correlation,
                         symbolic.cor = symbolic.cor, ...))
+    class(summ.out) <- "summary.regrans"
     return(summ.out)
 }
