@@ -1,4 +1,5 @@
 ##' @title Summarizing Segmented Linear Regression Fits
+##' @name summary.regrans
 ##' @author Rodrigo Sant'Ana \email{rsantana@@univali.br}, Fernando
 ##'     Mayer \email{fernando.mayer@@ufpr.br}
 ##'
@@ -24,7 +25,6 @@
 ##'
 ##' @method summary regrans
 ##' @export
-
 summary.regrans <- function(object, correlation = FALSE,
                             symbolic.cor = FALSE, ...) {
     summ.out <- list(
@@ -33,5 +33,5 @@ summary.regrans <- function(object, correlation = FALSE,
         right = summary(object[[2]], correlation = correlation,
                         symbolic.cor = symbolic.cor, ...))
     ## class(summ.out) <- "summary.regrans"
-    return(invisible(summ.out))
+    return(summ.out)
 }

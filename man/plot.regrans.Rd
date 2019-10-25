@@ -26,10 +26,20 @@ line widths that will be drawing the lines of both linear models
 \item{...}{further arguments passed to or from other methods to
 plot.}
 }
+\value{
+The function 'plot.regrans' will return a plot with both
+    segment regressions models.
+}
 \description{
 Segmented linear regression plot for visualization of
     the transition point (or allometric inflection point) identified
     by interactive regrans routine.
+}
+\examples{
+data(simdata)
+mod <- regrans(simdata$x, simdata$y)
+plot(mod)
+
 }
 \author{
 Rodrigo Sant'Ana \email{rsantana@univali.br}, Fernando

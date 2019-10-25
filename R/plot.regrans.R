@@ -1,5 +1,8 @@
 ##' @title Plot of Segmented Linear Regression for an \code{regrans}
 ##'     Object
+##' @name plot.regrans
+##' @author Rodrigo Sant'Ana \email{rsantana@@univali.br}, Fernando
+##'     Mayer \email{fernando.mayer@@ufpr.br}
 ##'
 ##' @description Segmented linear regression plot for visualization of
 ##'     the transition point (or allometric inflection point) identified
@@ -18,9 +21,18 @@
 ##' @param ... further arguments passed to or from other methods to
 ##'     plot.
 ##'
-##' @author Rodrigo Sant'Ana \email{rsantana@@univali.br}, Fernando
-##'     Mayer \email{fernando.mayer@@ufpr.br}
-plot.regrans <- function(obj, col.lines = c("red", "blue"),
+##' @return The function 'plot.regrans' will return a plot with both
+##'     segment regressions models.
+##'
+##' @examples
+##' data(simdata)
+##' mod <- regrans(simdata$x, simdata$y)
+##' plot(mod)
+##'
+##' @method plot regrans
+##' @export
+plot.regrans <- function(obj,
+                         col.lines = c("red", "blue"),
                          lty.lines = c("solid", "solid"),
                          lwd.lines = c(1, 1), ...) {
     if(length(col.lines) != 2 | length(lty.lines) != 2 |
