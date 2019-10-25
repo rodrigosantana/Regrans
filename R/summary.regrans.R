@@ -18,6 +18,9 @@
 ##'
 ##' @author Rodrigo Sant'Ana \email{rsantana@@univali.br}, Fernando
 ##'     Mayer \email{fernando.mayer@@ufpr.br}
+##'
+##' @method summary regrans
+##' @export
 summary.regrans <- function(object, correlation = FALSE,
                             symbolic.cor = FALSE, ...) {
     summ.out <- list(
