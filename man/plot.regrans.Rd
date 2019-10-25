@@ -35,12 +35,6 @@ Segmented linear regression plot for visualization of
     the transition point (or allometric inflection point) identified
     by interactive regrans routine.
 }
-\examples{
-data(simdata)
-mod <- regrans(simdata$x, simdata$y)
-plot(mod)
-
-}
 \author{
 Rodrigo Sant'Ana \email{rsantana@univali.br}, Fernando
     Mayer \email{fernando.mayer@ufpr.br}

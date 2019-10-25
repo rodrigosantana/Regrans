@@ -24,13 +24,7 @@
 ##' @return The function 'plot.regrans' will return a plot with both
 ##'     segment regressions models.
 ##'
-##' @examples
-##' data(simdata)
-##' mod <- regrans(simdata$x, simdata$y)
-##' plot(mod)
 ##'
-##' @method plot regrans
-##' @export
 plot.regrans <- function(obj,
                          col.lines = c("red", "blue"),
                          lty.lines = c("solid", "solid"),
