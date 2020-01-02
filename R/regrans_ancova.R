@@ -1,6 +1,8 @@
 ##' @title Implements an ANCOVA for Parameters Comparisons of Segmented
 ##'     Linear Regressions Based on a \code{regrans} Object
 ##'
+##' @name regrans_ancova
+##'
 ##' @description Parameter comparisons of a segmented linear regression
 ##'     model based on an interactive \code{regrans} routine.
 ##'
@@ -10,7 +12,7 @@
 ##'
 ##' @author Rodrigo Sant'Ana \email{rsantana@@univali.br}, Fernando
 ##'     Mayer \email{fernando.mayer@@ufpr.br}
-regrans.ancova <- function(obj) {
+regrans_ancova <- function(obj) {
     nleft <- nrow(obj$left$model)
     nright <- nrow(obj$right$model)
     da <- data.frame(model = c(rep("left", nleft),
