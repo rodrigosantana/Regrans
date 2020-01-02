@@ -1,6 +1,6 @@
 ##' @title Plot of Segmented Linear Regression for an \code{regrans}
 ##'     Object
-##' @name plot.regrans
+##' @name plot_regrans
 ##' @author Rodrigo Sant'Ana \email{rsantana@@univali.br}, Fernando
 ##'     Mayer \email{fernando.mayer@@ufpr.br}
 ##'
@@ -27,14 +27,13 @@
 ##' @examples
 ##' data(simdata)
 ##' mod <- regrans(simdata$x, simdata$y)
-##' plot(mod)
+##' plot_regrans(mod)
 ##'
 ##' @importFrom graphics plot
 ##' @importFrom graphics lines
 ##'
-##' @method plot regrans
 ##' @export
-plot.regrans <- function(obj,
+plot_regrans <- function(obj,
                          col.lines = c("red", "blue"),
                          lty.lines = c("solid", "solid"),
                          lwd.lines = c(1, 1), ...) {
