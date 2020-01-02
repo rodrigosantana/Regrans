@@ -11,6 +11,8 @@
 ##' @author Rodrigo Sant'Ana \email{rsantana@@univali.br}, Fernando
 ##'     Mayer \email{fernando.mayer@@ufpr.br}
 ##'
+##' @importFrom stats lm
+##'
 ##' @export
 regrans <- function(x, y, n.min = 5) {
     obj <- regranslm(x = x, y = y, n.min = n.min)

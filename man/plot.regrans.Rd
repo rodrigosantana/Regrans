@@ -5,8 +5,13 @@
 \title{Plot of Segmented Linear Regression for an \code{regrans}
     Object}
 \usage{
-\method{plot}{regrans}(obj, col.lines = c("red", "blue"),
-  lty.lines = c("solid", "solid"), lwd.lines = c(1, 1), ...)
+\method{plot}{regrans}(
+  obj,
+  col.lines = c("red", "blue"),
+  lty.lines = c("solid", "solid"),
+  lwd.lines = c(1, 1),
+  ...
+)
 }
 \arguments{
 \item{obj}{\code{regrans} object, result of \code{regrans} function.}
@@ -34,6 +39,12 @@ The function 'plot.regrans' will return a plot with both
 Segmented linear regression plot for visualization of
     the transition point (or allometric inflection point) identified
     by interactive regrans routine.
+}
+\examples{
+data(simdata)
+mod <- regrans(simdata$x, simdata$y)
+plot(mod)
+
 }
 \author{
 Rodrigo Sant'Ana \email{rsantana@univali.br}, Fernando
